@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Preischadt/CLionProjects/untitled13/double_linked_list.c
+double_linked_list.h
+/mnt/c/Users/Preischadt/CLionProjects/untitled13/double_linked_list.h
+stdlib.h
+-
+stdio.h
+-
+
+/mnt/c/Users/Preischadt/CLionProjects/untitled13/double_linked_list.h
+
+/mnt/c/Users/Preischadt/CLionProjects/untitled13/main.c
+stdio.h
+-
+stdlib.h
+-
+double_linked_list.h
+/mnt/c/Users/Preischadt/CLionProjects/untitled13/double_linked_list.h
+
