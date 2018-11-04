@@ -24,10 +24,12 @@ struct VECTOR{
 };
 
 vector* create_vector();
-void sort(vector* v);
-void push_back(vector* v, tab* t);
-void new_position(vector* v, char* name, int position);
+int is_empty(vector* v);
 void show(vector* v);
-void destroy_vector(node* n);
+void sort(vector* v, int type);
+void new_position(vector* v, char* name, int position);
+void push_back(vector* v, tab* t);
+tab* pop_front(vector* v);
+void destroy_vector(vector* v);
 
 #endif //DOUBLE_LINKED_LIST_H

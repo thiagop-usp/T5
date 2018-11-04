@@ -13,6 +13,8 @@ stdlib.h
 -
 stdio.h
 -
+string.h
+-
 
 /mnt/c/Users/Preischadt/CLionProjects/untitled13/double_linked_list.h
 
