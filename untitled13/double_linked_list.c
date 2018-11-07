@@ -86,7 +86,7 @@ void show(vector* v){
 void destroy_vector(vector* v){
     while(!is_empty(v)){
         tab* t = pop_front(v);
-	free(t);
+		free(t);
     }
     free(v);
 }
