@@ -3,6 +3,10 @@
 ### This project was done for an University assignment.
 ### It's supposed to _simulate_ how tabs work in a web browser. It's not supposed to be a useful tool or anything, more like practice, but I felt like making this README a little bit more fancy.
 
+#### Running the program:
+  - To compile it, simply type in `make all`.
+  - To run it, type in `make run`.
+
 #### Possible Commands are:
 
 - 1. Adding a website.
