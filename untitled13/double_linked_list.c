@@ -6,30 +6,7 @@
 int size(int a){
     if(a == 0) return 61; // minutes
     if(a == 1) return 25; // hours
-    if(a == 2) return 32; // days1
-    USP
-    http://www.usp.br
-    20 11
-    08 30
-    1
-    ICMC USP
-    http://www.icmc.usp.br
-    20 11
-    09 15
-    1
-    FOG
-    http://www.fog.icmc.usp.br
-    21 11
-    21 30
-    2
-    FOG
-    1
-    2
-    USP
-    3
-    4
-    3
-    4
+    if(a == 2) return 32; // days
     if(a == 3) return 13; // months
 }
 
