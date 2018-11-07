@@ -1,4 +1,3 @@
-ToolSet: Ubuntu 16.04.4 LTS@C:\Users\Preischadt\AppData\Local\Microsoft\WindowsApps\ubuntu1604.exe
 Options: 
 
 Options:

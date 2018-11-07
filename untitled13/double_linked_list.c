@@ -84,26 +84,13 @@ void show(vector* v){
 }
 
 void destroy_vector(vector* v){
-    node* current = v->first;
-    if(is_empty(v)) return;
-    while(current != NULL){
-        if(current == v->first){
-            free(v->first);
-        } else if(current != v->last){
-            free(current->previous->next);
-            free(current->previous);
-
-        } else {
-            free(current->previous->next);
-            free(current->previous);
-            free(v->last);
-        }
-        current = current->next;
+    while(!is_empty(v)){
+        pop_front(v);
     }
     free(v);
 }
 
-void sort(vector* v, int type){
+    void sort(vector* v, int type){
     vector* bucket[size(type)+1];
     node* current = v->first;
     memset(bucket, 0, sizeof(bucket));

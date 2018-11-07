@@ -4,13 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/mnt/c/Users/Preischadt/CLionProjects/untitled13/double_linked_list.c" "/mnt/c/Users/Preischadt/CLionProjects/untitled13/cmake-build-debug/CMakeFiles/untitled13.dir/double_linked_list.c.o"
-  "/mnt/c/Users/Preischadt/CLionProjects/untitled13/main.c" "/mnt/c/Users/Preischadt/CLionProjects/untitled13/cmake-build-debug/CMakeFiles/untitled13.dir/main.c.o"
+  "/home/preischadt/Desktop/T5-master/untitled13/double_linked_list.c" "/home/preischadt/Desktop/T5-master/untitled13/cmake-build-debug/CMakeFiles/untitled13.dir/double_linked_list.c.o"
+  "/home/preischadt/Desktop/T5-master/untitled13/main.c" "/home/preischadt/Desktop/T5-master/untitled13/cmake-build-debug/CMakeFiles/untitled13.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../."
+  "."
   )
 
 # Targets to which this target links.
