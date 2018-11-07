@@ -3,18 +3,33 @@
 #include <stdio.h>
 #include <string.h>
 
-int min(int a, int b) {
-    return a < b ? a : b;
-}
-
-int max(int a, int b) {
-    return a > b ? a : b;
-}
-
 int size(int a){
     if(a == 0) return 61; // minutes
     if(a == 1) return 25; // hours
-    if(a == 2) return 32; // days
+    if(a == 2) return 32; // days1
+    USP
+    http://www.usp.br
+    20 11
+    08 30
+    1
+    ICMC USP
+    http://www.icmc.usp.br
+    20 11
+    09 15
+    1
+    FOG
+    http://www.fog.icmc.usp.br
+    21 11
+    21 30
+    2
+    FOG
+    1
+    2
+    USP
+    3
+    4
+    3
+    4
     if(a == 3) return 13; // months
 }
 
@@ -100,6 +115,7 @@ void destroy_vector(vector* v){
         } else if(current != v->last){
             free(current->previous->next);
             free(current->previous);
+
         } else {
             free(current->previous->next);
             free(current->previous);
@@ -107,6 +123,7 @@ void destroy_vector(vector* v){
         }
         current = current->next;
     }
+    free(v);
 }
 
 void sort(vector* v, int type){
@@ -142,12 +159,12 @@ void new_position(vector* v, char* name, int position){
     if(current == NULL) return;
     else target = current;
 
-    current = v->first;
     if(position > v->size){
         new_position = v->last;
     } else if (position == 1){
         new_position = v->first;
     } else {
+        current = v->first;
         for(int i = 1; i <= position; i++){
             if(i == position || current == v->last) break;
             current = current->next;
@@ -169,8 +186,13 @@ void new_position(vector* v, char* name, int position){
         v->last = target->previous;
     }
 
-    aux->previous = new_position->previous;
-    aux->next = new_position;
+    if(position >= v->size){
+        aux->previous = v->last;
+        aux->next = NULL;
+    } else {
+        aux->previous = new_position->previous;
+        aux->next = new_position;
+    }
 
     if(new_position != v->first && new_position != v->last){
         aux->previous->next = aux;
